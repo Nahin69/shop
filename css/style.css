@@ -1,24 +1,24 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Poppins:wght@400;500;600&display=swap');
 
 
-*{
-    margin:0;
-    padding:0;
+* {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
 
-body{
+body {
     font-family: 'Poppins', sans-serif;
 }
 
 /* nav style start here */
 
-.header{
+.header {
     background-color: #9376e0;
 }
 
-.header-section{
+.header-section {
     max-width: 1200px;
     /* background-color: red; */
     margin: 0 auto;
@@ -28,49 +28,219 @@ body{
 
 
 
-.nav-container{
+.nav-container {
     /* border: 2px solid red; */
-    min-height: 20px;
+    min-height: 40px;
     display: flex;
     align-items: center;
     width: 50%;
 }
 
-.nav-container img{
+.nav-container img {
     width: 90px;
     object-fit: cover;
 }
 
 
-.nav-container p{
+.nav-container p {
     font-size: 25px;
 }
 
-.special{
+.special {
     color: #e893cf;
     font-weight: 900;
 }
 
-.items-container{
+.items-container {
     /* border: 2px solid yellow; */
-    width: 50%; 
-    
+    width: 50%;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.items-container a{
+.items-container a {
     text-decoration: none;
     font-size: 20px;
     color: white;
 }
 
-.items-container .login-button a{
+.login-button {
     padding: 10px 20px;
-    background-color:#e893cf;
+    background-color: #e893cf;
     border-radius: 5px;
+
+}
+
+
+.items-container .login-button a {
+
     color: black;
 }
 
 /* nav style ends here */
+
+/* banner section start here */
+
+.banner-section {
+    max-width: 1250px;
+    margin: 0 auto;
+    min-height: 400px;
+    display: flex;
+    background-color: #e6e9eb;
+    margin-top: 20px;
+    border-radius: 15px;
+    padding: 20px;
+}
+
+.text-container {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.text-container h1,
+p {
+    font-size: 45px;
+}
+
+#collections {
+    font-family: 'Dancing Script', cursive;
+    font-size: 50px;
+}
+
+.banner-image-container {
+    width: 50%;
+    position: relative;
+}
+
+.banner-image-container img {
+    width: 80%;
+    height: 80%;
+    display: block;
+    margin: 0 auto;
+}
+
+.banner-heading {
+    background: linear-gradient(to bottom, #e893cf, #9376e0);
+    background-clip: text;
+    color: transparent;
+    font-size: 60px;
+
+}
+
+.fa-brands {
+    font-size: 35px;
+}
+
+.icons {
+    display: flex;
+    gap: 15px;
+}
+
+.common-button {
+    padding: 10px 20px;
+    color: black;
+    border: 2px solid #e893cf;
+    border-radius: 5px;
+}
+
+.discount {
+    width: 90px;
+    height: 90px;
+    background-color: rgb(128, 128, 16);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 70%;
+    left: 69%;
+}
+
+/* banner section ends here */
+
+
+/* products style start */
+
+.products-section {
+    max-width: 1250px;
+    margin: 0 auto;
+}
+
+.grid-container {
+    /* min-width: 400px; */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.single-product {
+    /* border: 2px solid blue; */
+    /* width: 30%; */
+    padding: 15px;
+    background-color: #e6e9eb;
+    border-radius: 10px;
+
+
+}
+
+.single-product img {
+    width: 50%;
+    display: block;
+    margin: 0 auto;
+}
+
+.heading-icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icon {
+    background-color: #e893cf;
+    font-size: 20px;
+    border-radius: 50%;
+    color: white;
+    padding: 5px;
+}
+
+/* products style ends */
+
+
+/* gallery start */
+
+.gallery-section{
+    max-width: 1250px;
+    margin: 0 auto;
+    margin-top: 30px;
+    border: 2px solid blue;
+}
+
+.gallery-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    gap: 10px;
+}
+
+.single-gallery img{
+    width: 70%;
+    margin:0 auto;
+
+}
+
+.single-gallery{
+    flex-basis: 300px;
+    border: 2px solid red;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+/* gallery end */
